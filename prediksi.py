@@ -190,7 +190,7 @@ async def main():
         print(Fore.CYAN + prediction_message)
 
         # Countdown untuk update data selanjutnya
-        time.sleep(60)
+        time.sleep(30)
 
 # Menjalankan fungsi utama
 async def run():
