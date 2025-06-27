@@ -40,10 +40,10 @@ def response_GetNoaverageEmerdList():
     data = json.dumps({
         "pageSize": 10,
         "pageNo": 1,
-        "typeId": 1,
+        "typeId": 30,
         "language": 0,
-        "random": "2a48076cb5704c94962526254ac9a2cf",
-        "signature": "76FC6D0CF6BEAE2BDD7A28D7C12DAC78",
+        "random": "b631eb26bac6403e99093913e5bb48c5",
+        "signature": "A6203E85132E5FE26B5F43DDF1ECDD07",
         "timestamp": get_timestamp()
     })
     response = requests.post('https://newapi.55lottertttapi.com/api/webapi/GetNoaverageEmerdList', headers=headers, data=data)
@@ -62,10 +62,10 @@ def response_GetGameIssue():
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36',
     }
     data = json.dumps({
-        "typeId": 1,
+        "typeId": 30,
         "language": 0,
-        "random": "4431ad57be4f4c3b9e2fcaedd064bdba",
-        "signature": "ABC935D9B1AF1DA76F556AF81737E834",
+        "random": "166b81d9568e4123a83a2c7fdb80b7d9",
+        "signature": "5DB43C344C7381B72B5262FFB3572444",
         "timestamp": get_timestamp()
     })
     response = requests.post('https://newapi.55lottertttapi.com/api/webapi/GetGameIssue', headers=headers, data=data)
@@ -92,7 +92,7 @@ def determine_bet(number):
 
 # Fungsi utama untuk mendapatkan data dan mengirim prediksi
 async def main():
-    current_balance = 1000000  # Saldo awal
+    current_balance = 100000  # Saldo awal
     profit_balance = 0
     last_bet = 1000
     bet_index = 0
@@ -132,7 +132,7 @@ async def main():
             else:
                 is_loss = True
                 result = "MIN"
-                result_emoji = "☑️"
+                result_emoji = "❌"
                 result_color = Fore.RED
                 current_balance -= current_bet
         else:
@@ -145,7 +145,7 @@ async def main():
             else:
                 is_loss = True
                 result = "MIN"
-                result_emoji = "☑️"
+                result_emoji = "❌"
                 result_color = Fore.RED
                 current_balance -= current_bet
 
