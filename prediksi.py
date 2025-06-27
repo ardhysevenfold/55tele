@@ -8,9 +8,9 @@ import datetime
 from colorama import init, Fore, Style
 
 # Masukkan API ID dan API Hash yang Anda dapatkan
-api_id = '27380127'  # Ganti dengan API ID Anda
-api_hash = 'c05f6de1a5d5a2f14d618480e2317dbb'  # Ganti dengan API Hash Anda
-phone_number = '+6285710012481'  # Ganti dengan nomor telepon Anda
+api_id = '958785'  # Ganti dengan API ID Anda
+api_hash = 'bb59f6cba9ff8ad097d20e82c2284621'  # Ganti dengan API Hash Anda
+phone_number = '+6285299306383'  # Ganti dengan nomor telepon Anda
 
 # Inisialisasi warna untuk CMD
 init(autoreset=True)
